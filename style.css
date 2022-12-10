@@ -56,6 +56,13 @@ ul {
 .container{
 padding: 0 215px;
 }
+.header{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:var(--bg-color);
+  border-bottom:1px solid #ECECEC;
+}
 /*logo style*/
 .web {
   color: var(--active-color);
@@ -96,11 +103,7 @@ padding: 0 215px;
 }
 
 /*site navigation style*/
-.header{
-  background-color:var(--bg-color);
-  border-bottom:1px solid #ECECEC;
-  padding: 25px 215px;
-}
+
 .site-nav .link {
   color: var(--secondary-text-color);
   font-weight: 500;
