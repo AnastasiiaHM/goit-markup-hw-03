@@ -8,23 +8,13 @@ studio color - #000000
 button color - #F5F4FA
 color adress - #FFFFFF
 color footer contact - rgba(255, 255, 255, 0.6) */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 :root {
   --primery-text-color: #757575;
   --secondary-text-color: #212121;
   --active-color: #2196f3;
   --button-color: #f5f4fa;
-  --bg-color:#ffffff;
 }
 .page {
-  margin: 0;
   background-color: #f5f5f5;
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
@@ -32,36 +22,6 @@ html {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-/* container */
-.section {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 94px 0;
-  
-}
-.container{
-padding: 0 215px;
-}
-.header{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color:var(--bg-color);
-  border-bottom:1px solid #ECECEC;
 }
 /*logo style*/
 .web {
@@ -103,72 +63,43 @@ padding: 0 215px;
 }
 
 /*site navigation style*/
-.header{
-  display: flex;
-}
-.logo{
-  margin-left: 215px;
-}
-.site-nav{
-  display: flex;
-}
-.link{
-  margin-left: 50px;
-}
-
 .site-nav .link {
-  background-color: tomato;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  
   color: var(--active-color);
 }
-.site-nav .link:not(last-child){
-  margin-right: 0px;
-  
-}
 
-.site-nav .active-page {
+.site-nav .active-page{
   color: var(--active-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-
-  margin-left: 93px;
 }
 
 /*contact-style*/
-
 .contact {
-
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-
-
-}
-.mail{
-  margin-right: 50px;
 }
 .contact .header:hover,
 .contact .header:focus {
   color: var(--active-color);
 }
 .contact .footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff 60%;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -185,7 +116,6 @@ padding: 0 215px;
 /*Hero*/
 .hero {
   background-color: #2f303a;
-  padding: 200px auto;
 }
 .hero .hero-title {
   color: #ffffff;
@@ -195,9 +125,6 @@ padding: 0 215px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  margin-bottom: 30px;
-  margin-top: 200px;
 }
 
 /* section title style */
@@ -208,14 +135,10 @@ padding: 0 215px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: 50px;
 }
-
 
 /*Button*/
 .button {
-  display: inline-block;
   color: var(--secondary-text-color);
   background-color: var(--button-color);
   cursor: pointer;
@@ -224,23 +147,9 @@ padding: 0 215px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-
-  min-height: 38px;
-  min-width: 73px;
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 
 .hero .button-hero {
-  display: block;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 32px;
-  margin-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -265,12 +174,7 @@ padding: 0 215px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-
-  margin-bottom: 10px;
 }
-
-/* Чим ми займаємося */
-
 
 /* Team style */
 
@@ -281,8 +185,6 @@ padding: 0 215px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-
-  margin-bottom: 50px;
 }
 .team .team-text {
   text-align: center;
