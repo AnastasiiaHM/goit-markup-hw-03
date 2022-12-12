@@ -103,19 +103,37 @@ padding: 0 215px;
 }
 
 /*site navigation style*/
+.header{
+  display: flex;
+}
+.logo{
+  margin-left: 215px;
+}
+.site-nav{
+  display: flex;
+}
+.link{
+  margin-left: 50px;
+}
 
 .site-nav .link {
+  background-color: tomato;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  
   color: var(--active-color);
+}
+.site-nav .link:not(last-child){
+  margin-right: 0px;
+  
 }
 
 .site-nav .active-page {
@@ -125,17 +143,25 @@ padding: 0 215px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  margin-left: 93px;
 }
 
 /*contact-style*/
+
 .contact {
+
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: inline-block;
+
+
+}
+.mail{
+  margin-right: 50px;
 }
 .contact .header:hover,
 .contact .header:focus {
@@ -206,11 +232,14 @@ padding: 0 215px;
 }
 
 .hero .button-hero {
+  display: block;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
   margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 700;
   font-size: 16px;
