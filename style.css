@@ -52,7 +52,6 @@ body {
   padding-left: 15px;
   border-bottom: 1px solid #ececec;
   align-items: center;
-  background-color: green;
 }
 
 .container-header {
@@ -73,7 +72,6 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-  background-color: teal;
 }
 .web {
   color: var(--active-color);
@@ -119,7 +117,6 @@ body {
 }
 .site-nav .item:not(last-child) {
   margin-right: 50px;
-  background-color: tomato;
 }
 
 .site-nav .link {
@@ -148,21 +145,23 @@ body {
 }
 
 /*contact-style*/
-.contact .item + .item {
+.contact-header .item + .item {
   margin-left: 50px;
-  background-color: tomato;
 }
 .contact {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.contact-header {
+  display: flex;
+}
+.contact-header .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact .header:hover,
 .contact .header:focus {
@@ -220,6 +219,8 @@ body {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero .hero-title {
   margin-bottom: 30px;
@@ -269,10 +270,25 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Works */
+.works {
+  display: flex;
+}
+.works .item {
+  display: inline-block;
+}
+.works .item + .item {
+  margin-left: 50px;
+}
 /* Team style */
-
+.team {
+  display: flex;
+}
+.team .team-li + .team-li {
+  margin-left: 30px;
+}
 .team .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -283,6 +299,7 @@ body {
 }
 .team .team-text {
   text-align: center;
+  margin-bottom: 30px;
 }
 /*Footer  */
 .container-footer {
@@ -291,12 +308,20 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer {
   background-color: #2f303a;
 }
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
 .adress {
+  display: inline-block;
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
@@ -316,20 +341,30 @@ body {
 
 .buttons-portfolio {
   display: flex;
+  justify-content: center;
+
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio {
   display: flex;
   flex-wrap: wrap;
 }
 .portfolio-element {
-  width: 380px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
+
 .portfolio-element:nth-child(3n) {
   margin-right: 0;
 }
 
+.portfolio-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 .portfolio .title {
   color: var(--secondary-text-color);
   font-weight: 700;
