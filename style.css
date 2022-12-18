@@ -43,28 +43,34 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.main-header {
+.container {
+  
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.main-header{
   display: flex;
-  width: 1230px;
+ ;
+}
+.container-header {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
   border-bottom: 1px solid #ececec;
-  align-items: center;
-}
 
-.container-header {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  background-color: #ffffff
 }
 
 .section {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 94px 15px;
+margin-left: auto;
+margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px; 
 }
 /*logo style*/
 .logo {
@@ -115,8 +121,8 @@ body {
 .site-nav {
   display: flex;
 }
-.site-nav .item:not(last-child) {
-  margin-right: 50px;
+.site-nav .item+.item {
+  margin-left: 50px;
 }
 
 .site-nav .link {
@@ -203,7 +209,6 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
-  margin-bottom: 200px;
 
   font-weight: 700;
   font-size: 16px;
@@ -233,12 +238,16 @@ body {
   text-transform: uppercase;
 }
 /* Features style */
-.features-list .feature-li + .feature-li {
+.features-list 
+ {
   display: block;
 }
-.feature-li {
+.feature-li{
   width: 270px;
-  margin-right: 50px;
+}
+.features-list .feature-li+.feature-li {
+ 
+  margin-left: 50px;
 }
 .features-list {
   display: flex;
@@ -278,7 +287,7 @@ body {
   display: inline-block;
 }
 .works .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 /* Team style */
 .team {
@@ -288,6 +297,7 @@ body {
   margin-left: 30px;
 }
 .team .team-title {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -303,9 +313,7 @@ body {
 }
 /*Footer  */
 .container-footer {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
+  
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 60px;
@@ -322,13 +330,16 @@ body {
 .adress {
   display: inline-block;
   margin-bottom: 9px;
-  color: rgba(255, 255, 255, 0.6);
+  color:#ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.contact-footer{
+  color:rgba(255, 255, 255, 0.6);
 }
 
 /* Portfolio styles */
@@ -355,7 +366,7 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-element:nth-child(3n) {
