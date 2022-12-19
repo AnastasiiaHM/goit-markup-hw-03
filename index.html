@@ -20,15 +20,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="container-header">
-      <div class="container main-header">
-        <nav>
-          <div class="container-header">
-          <a href="./index.html" lang="en" class="web logo"
-            >Web<span class="studio">Studio</span></a
-          >
-        
-          <ul class="utilited-ul site-nav">
+    <header class="container main-header">
+      <nav>
+          <div class=" main-header">
+         <a href="./index.html" lang="en" class="web logo"
+            >Web<span class="studio">Studio</span></a>
+         <ul class="utilited-ul site-nav">
             <li class="item">
               <a href="./index.html" class="link active-page">Студія</a></li>
             <li class="item">
@@ -39,9 +36,9 @@
             <li class="item">
               <a href="" class="link">Контакти</a></li>
           </ul>
-          </div>
+        </div>
         </nav>
-        <div class="container-header">
+        
         <ul class="utilited-ul contact-header">
           <li class="item">
             <a href=" mailto:info@devstudio.com" class="contact header"
@@ -54,8 +51,8 @@
             >
           </li>
         </ul>
-      </div>
-    </div>
+      
+    
     </header>
 
     <main>
@@ -68,7 +65,7 @@
       </section>
       <!--особливості  -->
       <section class="section container">
-        <h2 class="section-title">особливості</h2>
+        <h2 class="section-title" hidden>особливості</h2>
         <ul class="utilited-ul features-list">
           <li class="feature-li">
             <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -91,7 +88,7 @@
             </p>
           </li>
           <li class="feature-li">
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p>
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
@@ -111,31 +108,33 @@
       
       </section>
       <!-- Наша команда -->
-      <section class="section container">
+      <section class="section  our-team">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
         
         <ul class="utilited-ul team">
           <li class="team-li">
-            <img src="./image/img.jpg" width="270" alt="Ігор Дем'яненко" />
+            <img src="./image/img.jpg" width="270" alt="Ігор Дем'яненко" class="team-photo" />
             <h3 class="team-title">Ігор Дем'яненко</h3>
             <p class="team-text">Product Designer</p>
           </li>
           <li class="team-li">
-            <img src="./image/img1.jpg" width="270" alt="Ольга Рєпіна" />
+            <img src="./image/img1.jpg" width="270" alt="Ольга Рєпіна"  class="team-photo"/>
             <h3 class="team-title">Ольга Рєпіна</h3>
             <p class="team-text">Frontend Developer</p>
           </li>
           <li class="team-li">
-            <img src="./image/img2.jpg" width="270" alt="Микола Тарасов" />
+            <img src="./image/img2.jpg" width="270" alt="Микола Тарасов"  class="team-photo"/>
             <h3 class="team-title">Микола Тарасов</h3>
             <p class="team-text">Marketing</p>
           </li>
           <li class="team-li">
-            <img src="./image/img3.jpg" width="270" alt="Михайло Єрмаков" />
+            <img src="./image/img3.jpg" width="270" alt="Михайло Єрмаков" class="team-photo" />
             <h3 class="team-title">Михайло Єрмаков</h3>
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- підвал -->
