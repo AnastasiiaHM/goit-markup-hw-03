@@ -241,6 +241,9 @@ header {
   text-transform: uppercase;
 }
 /* Features style */
+.feautres {
+  padding-bottom: 0px;
+}
 .features-list {
   display: block;
 }
@@ -296,6 +299,7 @@ header {
 /* Team style */
 .our-team {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
 }
 .team {
   display: flex;
