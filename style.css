@@ -244,9 +244,7 @@ header {
 .feautres {
   padding-bottom: 0px;
 }
-.features-list {
-  display: block;
-}
+
 .feature-li {
   width: 270px;
 }
@@ -254,6 +252,7 @@ header {
   margin-left: 30px;
 }
 .features-list {
+  justify-content: center;
   display: flex;
   font-weight: 400;
   font-size: 14px;
