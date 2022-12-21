@@ -49,12 +49,13 @@ body {
   margin-right: auto;
 }
 .main-header {
-  display: flex;
+  display:flex;
+ 
 }
 header {
   border-bottom: 1px solid #ececec;
 }
-.container-header {
+.header-grow {
   display: flex;
   align-items: center;
   margin-left: auto;
